@@ -22,7 +22,7 @@ resource "qovery_application" "this" {
   ports = [{
     name                = "http"
     internal_port       = var.internal_port
-    external_port       = 443
+    external_port       = var.publicly_accessible ? 443 : null
     publicly_accessible = var.publicly_accessible
     protocol            = "HTTP"
     is_default          = true
