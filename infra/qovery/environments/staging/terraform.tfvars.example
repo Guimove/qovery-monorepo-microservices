@@ -1,3 +1,5 @@
-environment_id = "00000000-0000-0000-0000-000000000000"
-repository_url = "https://github.com/acme/commerce-platform.git"
-branch         = "main"
+project_id       = "de0717e7-d586-49b6-a5b8-71634314ca09"
+cluster_id       = "809f9644-b3e4-400b-97fc-e2173d46a00e"
+environment_name = "monorepo-demo"
+repository_url   = "https://github.com/Guimove/qovery-monorepo-microservices.git"
+branch           = "main"
