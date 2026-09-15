@@ -1,0 +1,9 @@
+/apps/api-gateway/  @acme/platform-edge
+/apps/orders/       @acme/orders
+/apps/payments/     @acme/payments
+/apps/web/          @acme/platform-edge
+
+/packages/contracts/ @acme/platform-architecture @acme/orders @acme/payments
+/packages/logger/    @acme/platform-runtime
+/infra/qovery/        @acme/platform-infrastructure
+

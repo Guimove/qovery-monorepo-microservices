@@ -1,0 +1,3 @@
+environment_id = "00000000-0000-0000-0000-000000000000"
+repository_url = "https://github.com/acme/commerce-platform.git"
+branch         = "main"

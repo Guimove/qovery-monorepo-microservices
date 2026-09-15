@@ -1,0 +1,18 @@
+flowchart LR
+  DB[(databases)] --> MIG[migrations]
+  MIG --> ORD[orders]
+  MIG --> PAY[payments]
+  ORD --> GW[api-gateway]
+  PAY --> GW
+  ORD --> WEB[web]
+  PAY --> WEB
+
+  classDef data fill:#182230,color:#fff,stroke:#182230
+  classDef job fill:#e9e6f8,color:#3b2fa8,stroke:#3b2fa8
+  classDef core fill:#642dff,color:#fff,stroke:#3b2fa8
+  classDef edge fill:#e3f3ec,color:#1a7f5a,stroke:#1a7f5a
+
+  class DB data
+  class MIG job
+  class ORD,PAY core
+  class GW,WEB edge

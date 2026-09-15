@@ -1,0 +1,15 @@
+{
+  "name": "@acme/web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --format=esm --outfile=dist/index.js",
+    "dev": "node --enable-source-maps dist/index.js",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@acme/contracts": "workspace:*"
+  }
+}
