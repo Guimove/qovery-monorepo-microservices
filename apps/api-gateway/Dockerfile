@@ -14,6 +14,7 @@ COPY --from=pruner /repo/out/json/ .
 COPY --from=pruner /repo/out/pnpm-lock.yaml ./pnpm-lock.yaml
 RUN pnpm install --frozen-lockfile
 COPY --from=pruner /repo/out/full/ .
+COPY --from=pruner /repo/packages/config ./packages/config
 RUN turbo run build --filter=@acme/api-gateway
 
 FROM node:22-alpine AS runner
