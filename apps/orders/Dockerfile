@@ -21,6 +21,7 @@ FROM node:22-alpine AS runner
 ENV NODE_ENV=production PORT=8081
 WORKDIR /app
 USER node
+# test
 COPY --from=builder --chown=node:node /repo/apps/orders/dist ./dist
 COPY --from=builder --chown=node:node /repo/apps/orders/migrations ./migrations
 EXPOSE 8081
